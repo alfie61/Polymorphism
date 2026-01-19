@@ -1,0 +1,37 @@
+class SecurityGuard{  
+    void duty(){
+        System.out.println("Security Guard performs general security duties.");}  
+}  
+class MallGuard extends SecurityGuard{  
+    void duty(){
+        System.out.println("Mall Guard checks visitors and checks cctv.");}  
+}  
+class BankGuard extends SecurityGuard{  
+    void duty(){
+        System.out.println("Bank Guard protects cash counters and vault.");}  
+}  
+class NightGuard extends SecurityGuard{  
+    void duty(){
+        System.out.println("Night guard patrols the premises at night.");}  
+}  
+public class Main{  
+    public static void main(String args[]){  
+        SecurityGuard guard;
+
+        guard = new SecurityGuard();
+        guard.duty();
+
+        guard = new MallGuard();   
+        guard.duty();
+
+        guard = new BankGuard();   
+        guard.duty();
+
+        guard = new NightGuard();  
+        guard.duty();
+    }  
+}  
+
+
+
+
